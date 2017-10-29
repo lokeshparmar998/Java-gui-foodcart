@@ -10,6 +10,7 @@
  */
 public class food extends javax.swing.JFrame {
     static double sum=0;
+    int flag1=0,flag2=0,flag3=0,flag4=0,flag5=0;
 
     /**
      * Creates new form food
@@ -23,6 +24,7 @@ public class food extends javax.swing.JFrame {
         jLabel18.setVisible(false);
         jLabel19.setVisible(false);
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -104,8 +106,6 @@ public class food extends javax.swing.JFrame {
         jCheckBox6 = new javax.swing.JCheckBox();
         jLabel33 = new javax.swing.JLabel();
         jCheckBox7 = new javax.swing.JCheckBox();
-        jLabel34 = new javax.swing.JLabel();
-        jCheckBox8 = new javax.swing.JCheckBox();
         jLabel35 = new javax.swing.JLabel();
         jLabel36 = new javax.swing.JLabel();
         jCheckBox9 = new javax.swing.JCheckBox();
@@ -658,6 +658,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox2.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         jCheckBox2.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox2.setText("Baker's Bun");
+        jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox2ActionPerformed(evt);
+            }
+        });
 
         jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/bun 3.PNG"))); // NOI18N
 
@@ -677,6 +682,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox4.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         jCheckBox4.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox4.setText("Cheddar Cheese");
+        jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox4ActionPerformed(evt);
+            }
+        });
 
         jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/chees 2.PNG"))); // NOI18N
 
@@ -686,6 +696,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox5.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         jCheckBox5.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox5.setText("Swiss Cheese");
+        jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox5ActionPerformed(evt);
+            }
+        });
 
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/chees 3.PNG"))); // NOI18N
 
@@ -693,6 +708,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox6.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         jCheckBox6.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox6.setText("Colby Jack Cheese");
+        jCheckBox6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox6ActionPerformed(evt);
+            }
+        });
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/chees 4.PNG"))); // NOI18N
 
@@ -700,13 +720,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox7.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         jCheckBox7.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox7.setText("Classic Cheese");
-
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/chees 5.PNG"))); // NOI18N
-
-        jCheckBox8.setBackground(new java.awt.Color(0, 0, 0));
-        jCheckBox8.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
-        jCheckBox8.setForeground(new java.awt.Color(240, 240, 240));
-        jCheckBox8.setText("Shaved Parmesan");
+        jCheckBox7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox7ActionPerformed(evt);
+            }
+        });
 
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/fresh1.PNG"))); // NOI18N
 
@@ -716,11 +734,21 @@ public class food extends javax.swing.JFrame {
         jCheckBox9.setFont(new java.awt.Font("Myanmar Text", 1, 12)); // NOI18N
         jCheckBox9.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox9.setText("Lettuce");
+        jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox9ActionPerformed(evt);
+            }
+        });
 
         jCheckBox10.setBackground(new java.awt.Color(0, 0, 0));
         jCheckBox10.setFont(new java.awt.Font("Myanmar Text", 1, 12)); // NOI18N
         jCheckBox10.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox10.setText("Tomato");
+        jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox10ActionPerformed(evt);
+            }
+        });
 
         jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/tast 1.PNG"))); // NOI18N
 
@@ -728,6 +756,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox11.setFont(new java.awt.Font("Myanmar Text", 1, 12)); // NOI18N
         jCheckBox11.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox11.setText("Chrispy Bacon");
+        jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox11ActionPerformed(evt);
+            }
+        });
 
         jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/taste2.PNG"))); // NOI18N
 
@@ -735,6 +768,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox12.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         jCheckBox12.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox12.setText("Egg");
+        jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox12ActionPerformed(evt);
+            }
+        });
 
         jLabel39.setBackground(new java.awt.Color(0, 0, 0));
         jLabel39.setForeground(new java.awt.Color(240, 240, 240));
@@ -744,6 +782,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox13.setFont(new java.awt.Font("Myanmar Text", 1, 12)); // NOI18N
         jCheckBox13.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox13.setText("113g Beef Patty");
+        jCheckBox13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox13ActionPerformed(evt);
+            }
+        });
 
         jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/tast4.PNG"))); // NOI18N
 
@@ -751,6 +794,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox14.setFont(new java.awt.Font("Myanmar Text", 1, 14)); // NOI18N
         jCheckBox14.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox14.setText("Tortilla");
+        jCheckBox14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox14ActionPerformed(evt);
+            }
+        });
 
         jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/fresh3.PNG"))); // NOI18N
 
@@ -760,11 +808,21 @@ public class food extends javax.swing.JFrame {
         jCheckBox15.setFont(new java.awt.Font("Myanmar Text", 1, 12)); // NOI18N
         jCheckBox15.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox15.setText("Garlic onion");
+        jCheckBox15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox15ActionPerformed(evt);
+            }
+        });
 
         jCheckBox16.setBackground(new java.awt.Color(0, 0, 0));
         jCheckBox16.setFont(new java.awt.Font("Myanmar Text", 1, 12)); // NOI18N
         jCheckBox16.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox16.setText("BeetRoot");
+        jCheckBox16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox16ActionPerformed(evt);
+            }
+        });
 
         jLabel43.setBackground(new java.awt.Color(0, 0, 0));
         jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/onion.PNG"))); // NOI18N
@@ -773,6 +831,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox17.setFont(new java.awt.Font("Myanmar Text", 1, 12)); // NOI18N
         jCheckBox17.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox17.setText("Onion");
+        jCheckBox17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox17ActionPerformed(evt);
+            }
+        });
 
         jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/fresh6.PNG"))); // NOI18N
 
@@ -804,6 +867,11 @@ public class food extends javax.swing.JFrame {
         jCheckBox20.setFont(new java.awt.Font("Myanmar Text", 1, 12)); // NOI18N
         jCheckBox20.setForeground(new java.awt.Color(240, 240, 240));
         jCheckBox20.setText("Chilli Jam");
+        jCheckBox20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox20ActionPerformed(evt);
+            }
+        });
 
         jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/food image/custom/sauce3.PNG"))); // NOI18N
 
@@ -859,10 +927,7 @@ public class food extends javax.swing.JFrame {
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jLabel31))
                                             .addComponent(jCheckBox4)
-                                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                                .addComponent(jLabel30)
-                                                .addGap(168, 168, 168)
-                                                .addComponent(jLabel38)))
+                                            .addComponent(jLabel30))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                             .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -904,10 +969,7 @@ public class food extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addGroup(jPanel7Layout.createSequentialGroup()
-                                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel33)
-                                            .addComponent(jLabel34)
-                                            .addComponent(jCheckBox8))
+                                        .addComponent(jLabel33)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(jCheckBox22, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -951,18 +1013,22 @@ public class food extends javax.swing.JFrame {
                                                     .addGap(204, 204, 204)
                                                     .addComponent(jLabel44))
                                                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jCheckBox11)
                                                     .addComponent(jLabel37)
                                                     .addComponent(jCheckBox14)
                                                     .addGroup(jPanel7Layout.createSequentialGroup()
                                                         .addComponent(jCheckBox13)
                                                         .addGap(175, 175, 175)
-                                                        .addComponent(jCheckBox17)))))
+                                                        .addComponent(jCheckBox17))
+                                                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                                        .addComponent(jCheckBox11)
+                                                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                                                .addGap(10, 10, 10)
+                                                                .addComponent(jCheckBox12))
+                                                            .addComponent(jLabel38))))))
                                         .addGap(0, 0, Short.MAX_VALUE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
-                                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel39)
-                                            .addComponent(jCheckBox12))
+                                        .addComponent(jLabel39)
                                         .addGap(164, 164, 164)
                                         .addComponent(jLabel43)
                                         .addGap(38, 38, 38)))))
@@ -1022,9 +1088,7 @@ public class food extends javax.swing.JFrame {
                                 .addComponent(jLabel33))
                             .addComponent(jLabel31))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jCheckBox7)
-                        .addGap(39, 39, 39)
-                        .addComponent(jLabel34))
+                        .addComponent(jCheckBox7))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel7Layout.createSequentialGroup()
@@ -1084,8 +1148,7 @@ public class food extends javax.swing.JFrame {
                             .addComponent(jCheckBox14)
                             .addComponent(jCheckBox18)
                             .addComponent(jCheckBox22))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
-                .addComponent(jCheckBox8))
+                .addContainerGap(86, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jFrame3Layout = new javax.swing.GroupLayout(jFrame3.getContentPane());
@@ -1382,28 +1445,131 @@ public class food extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        // TODO add your handling code here:
+        if(flag1==1)
+            jCheckBox1.setSelected(false);
+        else flag1=1;
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
-        // TODO add your handling code here:
+         if(flag1==1)
+            jCheckBox3.setSelected(false);
+        else flag1=1;
     }//GEN-LAST:event_jCheckBox3ActionPerformed
 
     private void jCheckBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox18ActionPerformed
-        // TODO add your handling code here:
+        if(flag4==1)
+            jCheckBox18.setSelected(false);
+        else flag4=1;
     }//GEN-LAST:event_jCheckBox18ActionPerformed
 
     private void jCheckBox19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox19ActionPerformed
-        // TODO add your handling code here:
+        if(flag5==1)
+            jCheckBox19.setSelected(false);
+        else flag5=1;
     }//GEN-LAST:event_jCheckBox19ActionPerformed
 
     private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox22ActionPerformed
-        // TODO add your handling code here:
+        if(flag5==1)
+            jCheckBox22.setSelected(false);
+        else flag5=1;
     }//GEN-LAST:event_jCheckBox22ActionPerformed
 
     private void jCheckBox21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox21ActionPerformed
-        // TODO add your handling code here:
+       if(flag5==1)
+            jCheckBox21.setSelected(false);
+        else flag5=1;
     }//GEN-LAST:event_jCheckBox21ActionPerformed
+
+    private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
+         if(flag1==1)
+            jCheckBox2.setSelected(false);
+        else flag1=1;
+    }//GEN-LAST:event_jCheckBox2ActionPerformed
+
+    private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
+        if(flag2==1)
+            jCheckBox4.setSelected(false);
+        else flag2=1;
+        
+    }//GEN-LAST:event_jCheckBox4ActionPerformed
+
+    private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
+        if(flag2==1)
+            jCheckBox5.setSelected(false);
+        else flag2=1;
+    }//GEN-LAST:event_jCheckBox5ActionPerformed
+
+    private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
+        if(flag2==1)
+            jCheckBox6.setSelected(false);
+        else flag2=1;
+    }//GEN-LAST:event_jCheckBox6ActionPerformed
+
+    private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
+        if(flag2==1)
+            jCheckBox7.setSelected(false);
+        else flag2=1;
+    }//GEN-LAST:event_jCheckBox7ActionPerformed
+
+    private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
+        if(flag3==1)
+            jCheckBox11.setSelected(false);
+        else flag3=1;
+    }//GEN-LAST:event_jCheckBox11ActionPerformed
+
+    private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
+        if(flag3==1)
+            jCheckBox12.setSelected(false);
+        else flag3=1;
+    }//GEN-LAST:event_jCheckBox12ActionPerformed
+
+    private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
+         if(flag3==1)
+            jCheckBox13.setSelected(false);
+        else flag3=1;
+    }//GEN-LAST:event_jCheckBox13ActionPerformed
+
+    private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
+        if(flag3==1)
+            jCheckBox14.setSelected(false);
+        else flag3=1;
+    }//GEN-LAST:event_jCheckBox14ActionPerformed
+
+    private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
+        if(flag4==1)
+            jCheckBox9.setSelected(false);
+        else flag4=1;
+    }//GEN-LAST:event_jCheckBox9ActionPerformed
+
+    private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
+         if(flag4==1)
+            jCheckBox10.setSelected(false);
+        else flag4=1;
+    }//GEN-LAST:event_jCheckBox10ActionPerformed
+
+    private void jCheckBox15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox15ActionPerformed
+        if(flag4==1)
+            jCheckBox15.setSelected(false);
+        else flag4=1;
+    }//GEN-LAST:event_jCheckBox15ActionPerformed
+
+    private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
+         if(flag4==1)
+            jCheckBox16.setSelected(false);
+        else flag4=1;
+    }//GEN-LAST:event_jCheckBox16ActionPerformed
+
+    private void jCheckBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox17ActionPerformed
+         if(flag4==1)
+            jCheckBox17.setSelected(false);
+        else flag4=1;
+    }//GEN-LAST:event_jCheckBox17ActionPerformed
+
+    private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox20ActionPerformed
+        if(flag5==1)
+            jCheckBox20.setSelected(false);
+        else flag5=1;
+    }//GEN-LAST:event_jCheckBox20ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1466,7 +1632,6 @@ public class food extends javax.swing.JFrame {
     private javax.swing.JCheckBox jCheckBox5;
     private javax.swing.JCheckBox jCheckBox6;
     private javax.swing.JCheckBox jCheckBox7;
-    private javax.swing.JCheckBox jCheckBox8;
     private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JFrame jFrame3;
@@ -1497,7 +1662,6 @@ public class food extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
-    private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
