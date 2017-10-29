@@ -1710,7 +1710,7 @@ public class food extends javax.swing.JFrame {
        jCheckBox22.setSelected(false);
        customsum=0;
        flag1=flag2=flag3=flag4=flag5=0;
-       JOptionPane.showMessageDialog(null,"Window reset\n Create your custom food");
+       JOptionPane.showMessageDialog(null,"Window reset\n Create your custom food ");
     }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
