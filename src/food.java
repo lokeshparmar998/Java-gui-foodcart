@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,7 +12,7 @@
  * @author lokii
  */
 public class food extends javax.swing.JFrame {
-    static double sum=0;
+    static double sum=0,customsum=0;
     int flag1=0,flag2=0,flag3=0,flag4=0,flag5=0;
 
     /**
@@ -135,6 +138,7 @@ public class food extends javax.swing.JFrame {
         jLabel48 = new javax.swing.JLabel();
         jCheckBox22 = new javax.swing.JCheckBox();
         jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -898,9 +902,27 @@ public class food extends javax.swing.JFrame {
         });
 
         jButton5.setBackground(new java.awt.Color(0, 0, 0));
-        jButton5.setFont(new java.awt.Font("Segoe Script", 3, 24)); // NOI18N
+        jButton5.setFont(new java.awt.Font("Segoe Script", 3, 14)); // NOI18N
         jButton5.setForeground(new java.awt.Color(153, 153, 153));
         jButton5.setText("Finish");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jButton6.setBackground(new java.awt.Color(0, 0, 0));
+        jButton6.setFont(new java.awt.Font("Segoe Script", 3, 14)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(153, 153, 153));
+        jButton6.setText("Reset");
+        jButton6.setToolTipText("");
+        jButton6.setMaximumSize(new java.awt.Dimension(83, 33));
+        jButton6.setMinimumSize(new java.awt.Dimension(83, 33));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -1032,11 +1054,16 @@ public class food extends javax.swing.JFrame {
                                         .addGap(164, 164, 164)
                                         .addComponent(jLabel43)
                                         .addGap(38, 38, 38)))))
-                        .addGap(70, 70, 70)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel25)
-                            .addComponent(jButton5))
-                        .addGap(19, 19, 19))))
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addGap(105, 105, 105)
+                                .addComponent(jLabel25))
+                            .addGroup(jPanel7Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18))))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1044,8 +1071,10 @@ public class food extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel21)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(jButton5)))
+                        .addGap(45, 45, 45)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))))
                 .addGap(11, 11, 11)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel20)
@@ -1447,129 +1476,242 @@ public class food extends javax.swing.JFrame {
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         if(flag1==1)
             jCheckBox1.setSelected(false);
-        else flag1=1;
+        else 
+        {
+            flag1=1;
+            customsum=customsum+20;
+        }
     }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
          if(flag1==1)
             jCheckBox3.setSelected(false);
-        else flag1=1;
+        else {
+             flag1=1;
+             customsum=customsum+25.5;
+         }
     }//GEN-LAST:event_jCheckBox3ActionPerformed
 
     private void jCheckBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox18ActionPerformed
         if(flag4==1)
             jCheckBox18.setSelected(false);
-        else flag4=1;
+        else 
+        {
+            customsum=customsum+25;
+            flag4=1;
+        }
     }//GEN-LAST:event_jCheckBox18ActionPerformed
 
     private void jCheckBox19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox19ActionPerformed
         if(flag5==1)
             jCheckBox19.setSelected(false);
-        else flag5=1;
+        else {
+            customsum=customsum+10;
+            flag5=1;
+        }
     }//GEN-LAST:event_jCheckBox19ActionPerformed
 
     private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox22ActionPerformed
         if(flag5==1)
             jCheckBox22.setSelected(false);
-        else flag5=1;
+        else {
+            customsum=customsum+14;
+            flag5=1;
+        }
     }//GEN-LAST:event_jCheckBox22ActionPerformed
 
     private void jCheckBox21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox21ActionPerformed
        if(flag5==1)
             jCheckBox21.setSelected(false);
-        else flag5=1;
+        else {
+           customsum=customsum+15;
+           flag5=1;
+       }
     }//GEN-LAST:event_jCheckBox21ActionPerformed
 
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
          if(flag1==1)
             jCheckBox2.setSelected(false);
-        else flag1=1;
+        else {
+             flag1=1;
+             customsum=customsum+10;
+         }
     }//GEN-LAST:event_jCheckBox2ActionPerformed
 
     private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
         if(flag2==1)
             jCheckBox4.setSelected(false);
-        else flag2=1;
+        else {
+            flag2=1;
+            customsum=customsum+13;
+        }
         
     }//GEN-LAST:event_jCheckBox4ActionPerformed
 
     private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
         if(flag2==1)
             jCheckBox5.setSelected(false);
-        else flag2=1;
+        else {
+            flag2=1;
+            customsum=customsum+10;
+        }
     }//GEN-LAST:event_jCheckBox5ActionPerformed
 
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
         if(flag2==1)
             jCheckBox6.setSelected(false);
-        else flag2=1;
+        else {
+            flag2=1;
+            customsum=customsum+15;
+        }
     }//GEN-LAST:event_jCheckBox6ActionPerformed
 
     private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
         if(flag2==1)
             jCheckBox7.setSelected(false);
-        else flag2=1;
+        else {
+            flag2=1;
+            customsum=customsum+20;
+        }
     }//GEN-LAST:event_jCheckBox7ActionPerformed
 
     private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
         if(flag3==1)
             jCheckBox11.setSelected(false);
-        else flag3=1;
+        else {
+            flag3=1;
+            customsum=customsum+30;
+        }
     }//GEN-LAST:event_jCheckBox11ActionPerformed
 
     private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
         if(flag3==1)
             jCheckBox12.setSelected(false);
-        else flag3=1;
+        else {
+            flag3=1;
+            customsum=customsum+6;
+        }
     }//GEN-LAST:event_jCheckBox12ActionPerformed
 
     private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
          if(flag3==1)
             jCheckBox13.setSelected(false);
-        else flag3=1;
+        else {
+             flag3=1;
+             customsum=customsum+50;
+         }
     }//GEN-LAST:event_jCheckBox13ActionPerformed
 
     private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
         if(flag3==1)
             jCheckBox14.setSelected(false);
-        else flag3=1;
+        else {
+            flag3=1;
+            customsum=customsum+30;
+        }
     }//GEN-LAST:event_jCheckBox14ActionPerformed
 
     private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
         if(flag4==1)
             jCheckBox9.setSelected(false);
-        else flag4=1;
+        else {
+            flag4=1;
+            customsum=customsum+10;
+        }
     }//GEN-LAST:event_jCheckBox9ActionPerformed
 
     private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
          if(flag4==1)
             jCheckBox10.setSelected(false);
-        else flag4=1;
+        else {
+             customsum=customsum+5;
+             flag4=1;
+         }
     }//GEN-LAST:event_jCheckBox10ActionPerformed
 
     private void jCheckBox15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox15ActionPerformed
         if(flag4==1)
             jCheckBox15.setSelected(false);
-        else flag4=1;
+        else {
+            customsum=customsum+20;
+            flag4=1;
+        }
     }//GEN-LAST:event_jCheckBox15ActionPerformed
 
     private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
          if(flag4==1)
             jCheckBox16.setSelected(false);
-        else flag4=1;
+        else {
+             customsum=customsum+15;
+             flag4=1;
+         }
     }//GEN-LAST:event_jCheckBox16ActionPerformed
 
     private void jCheckBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox17ActionPerformed
          if(flag4==1)
             jCheckBox17.setSelected(false);
-        else flag4=1;
+        else {
+             customsum=customsum+12;
+             flag4=1;
+         }
     }//GEN-LAST:event_jCheckBox17ActionPerformed
 
     private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox20ActionPerformed
         if(flag5==1)
             jCheckBox20.setSelected(false);
-        else flag5=1;
+        else {
+            customsum=customsum+13;
+            flag5=1;
+        }
     }//GEN-LAST:event_jCheckBox20ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+       if(flag1+flag2+flag3+flag4+flag5==5)
+       {
+           String s;
+           s=Double.toString(customsum);
+           JOptionPane.showMessageDialog(null,"Your order has been register \n pay "+s+" \n Thanks for your order ");
+           
+       }
+       else
+       {
+           if(flag1==0)  JOptionPane.showMessageDialog(null,"You forgot step 1");
+           if(flag2==0)  JOptionPane.showMessageDialog(null,"You forgot step 2");
+           if(flag3==0)  JOptionPane.showMessageDialog(null,"You forgot step 3");
+           if(flag4==0)  JOptionPane.showMessageDialog(null,"You forgot step 4");
+           if(flag5==0)  JOptionPane.showMessageDialog(null,"You forgot step 5");
+           
+       }
+           
+           
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+       jCheckBox1.setSelected(false);
+       jCheckBox2.setSelected(false);
+       jCheckBox3.setSelected(false);
+       jCheckBox4.setSelected(false);
+       jCheckBox5.setSelected(false);
+       jCheckBox6.setSelected(false);
+       jCheckBox7.setSelected(false);
+       jCheckBox9.setSelected(false);
+       jCheckBox10.setSelected(false);
+       jCheckBox11.setSelected(false);
+       jCheckBox12.setSelected(false);
+       jCheckBox13.setSelected(false);
+       jCheckBox14.setSelected(false);
+       jCheckBox15.setSelected(false);
+       jCheckBox16.setSelected(false);
+       jCheckBox17.setSelected(false);
+       jCheckBox18.setSelected(false);
+       jCheckBox19.setSelected(false);
+       jCheckBox20.setSelected(false);
+       jCheckBox21.setSelected(false);
+       jCheckBox22.setSelected(false);
+       customsum=0;
+       flag1=flag2=flag3=flag4=flag5=0;
+       JOptionPane.showMessageDialog(null,"Window reset\n Create your custom food");
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1612,6 +1754,7 @@ public class food extends javax.swing.JFrame {
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox11;
