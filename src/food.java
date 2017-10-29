@@ -27,6 +27,10 @@ public class food extends javax.swing.JFrame {
         jLabel18.setVisible(false);
         jLabel19.setVisible(false);
     }
+    void message()
+    {
+        JOptionPane.showMessageDialog(null,"You can only select one");
+    }
     
 
     /**
@@ -1304,6 +1308,7 @@ public class food extends javax.swing.JFrame {
     private void jRadioButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton16ActionPerformed
        int button =100;
        sum=sum+button;
+       
     }//GEN-LAST:event_jRadioButton16ActionPerformed
 
     private void jRadioButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton20ActionPerformed
@@ -1324,6 +1329,8 @@ public class food extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        jFrame1.setVisible(true);
        jFrame1.setSize(1100,581);
+       jFrame1.setResizable(false);
+      
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
@@ -1358,6 +1365,7 @@ public class food extends javax.swing.JFrame {
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
         int button =70;
        sum=sum+button;
+       
     }//GEN-LAST:event_jRadioButton3ActionPerformed
 
     private void jRadioButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton4ActionPerformed
@@ -1465,17 +1473,29 @@ public class food extends javax.swing.JFrame {
         jTextField2.setText(" ");
         jTextField3.setText(" ");
         sum=0;
+        //Frame1 panel2 textfield and lable
+         jTextField1.setVisible(false);
+        jTextField2.setVisible(false);
+        jTextField3.setVisible(false);
+        jLabel3.setVisible(false);
+        jLabel18.setVisible(false);
+        jLabel19.setVisible(false);
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         jFrame3.setVisible(true);
         jFrame3.setSize(1061, 794);
+        jFrame3.setResizable(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
         if(flag1==1)
+        {
             jCheckBox1.setSelected(false);
+            message();
+            
+        }
         else 
         {
             flag1=1;
@@ -1485,7 +1505,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox3ActionPerformed
          if(flag1==1)
-            jCheckBox3.setSelected(false);
+         {
+             message();
+             jCheckBox3.setSelected(false);
+         }
         else {
              flag1=1;
              customsum=customsum+25.5;
@@ -1494,7 +1517,11 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox18ActionPerformed
         if(flag4==1)
-            jCheckBox18.setSelected(false);
+        {
+            message();
+             jCheckBox18.setSelected(false);
+        }
+           
         else 
         {
             customsum=customsum+25;
@@ -1504,7 +1531,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox19ActionPerformed
         if(flag5==1)
+        {
+             message();
             jCheckBox19.setSelected(false);
+        }
         else {
             customsum=customsum+10;
             flag5=1;
@@ -1513,7 +1543,11 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox22ActionPerformed
         if(flag5==1)
+            
+        {
+             message();
             jCheckBox22.setSelected(false);
+        }
         else {
             customsum=customsum+14;
             flag5=1;
@@ -1522,7 +1556,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox21ActionPerformed
        if(flag5==1)
-            jCheckBox21.setSelected(false);
+       {
+            message();
+           jCheckBox21.setSelected(false);
+       }
         else {
            customsum=customsum+15;
            flag5=1;
@@ -1531,7 +1568,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox2ActionPerformed
          if(flag1==1)
-            jCheckBox2.setSelected(false);
+         {
+              message();
+             jCheckBox2.setSelected(false);
+         }
         else {
              flag1=1;
              customsum=customsum+10;
@@ -1540,7 +1580,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox4ActionPerformed
         if(flag2==1)
+        {
+             message();
             jCheckBox4.setSelected(false);
+        }
         else {
             flag2=1;
             customsum=customsum+13;
@@ -1550,7 +1593,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox5ActionPerformed
         if(flag2==1)
+        {
+             message();
             jCheckBox5.setSelected(false);
+        }
         else {
             flag2=1;
             customsum=customsum+10;
@@ -1559,7 +1605,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox6ActionPerformed
         if(flag2==1)
+        {
+             message();
             jCheckBox6.setSelected(false);
+        }
         else {
             flag2=1;
             customsum=customsum+15;
@@ -1568,7 +1617,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox7ActionPerformed
         if(flag2==1)
+        {
+             message();
             jCheckBox7.setSelected(false);
+        }
         else {
             flag2=1;
             customsum=customsum+20;
@@ -1577,7 +1629,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox11ActionPerformed
         if(flag3==1)
+        {
+             message();
             jCheckBox11.setSelected(false);
+        }
         else {
             flag3=1;
             customsum=customsum+30;
@@ -1586,7 +1641,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox12ActionPerformed
         if(flag3==1)
+        {
+             message();
             jCheckBox12.setSelected(false);
+        }
         else {
             flag3=1;
             customsum=customsum+6;
@@ -1595,7 +1653,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox13ActionPerformed
          if(flag3==1)
-            jCheckBox13.setSelected(false);
+         {
+              message();
+             jCheckBox13.setSelected(false);
+         }
         else {
              flag3=1;
              customsum=customsum+50;
@@ -1604,7 +1665,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox14ActionPerformed
         if(flag3==1)
+        {
+             message();
             jCheckBox14.setSelected(false);
+        }
         else {
             flag3=1;
             customsum=customsum+30;
@@ -1613,7 +1677,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
         if(flag4==1)
+        {
+             message();
             jCheckBox9.setSelected(false);
+        }
         else {
             flag4=1;
             customsum=customsum+10;
@@ -1622,7 +1689,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox10ActionPerformed
          if(flag4==1)
-            jCheckBox10.setSelected(false);
+         {
+              message();
+             jCheckBox10.setSelected(false);
+         }
         else {
              customsum=customsum+5;
              flag4=1;
@@ -1631,7 +1701,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox15ActionPerformed
         if(flag4==1)
+        {
+             message();
             jCheckBox15.setSelected(false);
+        }
         else {
             customsum=customsum+20;
             flag4=1;
@@ -1640,7 +1713,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox16ActionPerformed
          if(flag4==1)
-            jCheckBox16.setSelected(false);
+         {
+              message();
+             jCheckBox16.setSelected(false);
+         }
         else {
              customsum=customsum+15;
              flag4=1;
@@ -1649,7 +1725,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox17ActionPerformed
          if(flag4==1)
-            jCheckBox17.setSelected(false);
+         {
+              message();
+             jCheckBox17.setSelected(false);
+         }
         else {
              customsum=customsum+12;
              flag4=1;
@@ -1658,7 +1737,10 @@ public class food extends javax.swing.JFrame {
 
     private void jCheckBox20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox20ActionPerformed
         if(flag5==1)
+        {
+             message();
             jCheckBox20.setSelected(false);
+        }
         else {
             customsum=customsum+13;
             flag5=1;
