@@ -90,6 +90,7 @@ public class food extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jTextField3 = new javax.swing.JTextField();
         jButton4 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         jFrame3 = new javax.swing.JFrame();
         jPanel7 = new javax.swing.JPanel();
         jLabel21 = new javax.swing.JLabel();
@@ -561,6 +562,15 @@ public class food extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setBackground(new java.awt.Color(51, 255, 0));
+        jButton7.setFont(new java.awt.Font("Eras Demi ITC", 0, 18)); // NOI18N
+        jButton7.setText("Done");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -588,6 +598,10 @@ public class food extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(105, 105, 105)
+                .addComponent(jButton7)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -610,6 +624,8 @@ public class food extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel19)
                     .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton7)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1255,7 +1271,7 @@ public class food extends javax.swing.JFrame {
                         .addComponent(jButton1)
                         .addGap(121, 121, 121)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel2.setBackground(new java.awt.Color(0, 51, 51));
@@ -1319,6 +1335,7 @@ public class food extends javax.swing.JFrame {
     private void jRadioButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton21ActionPerformed
         int button =100;
        sum=sum+button;
+       
     }//GEN-LAST:event_jRadioButton21ActionPerformed
 
     private void jRadioButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton22ActionPerformed
@@ -1330,7 +1347,8 @@ public class food extends javax.swing.JFrame {
        jFrame1.setVisible(true);
        jFrame1.setSize(1100,581);
        jFrame1.setResizable(false);
-      
+       
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jRadioButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton6ActionPerformed
@@ -1474,7 +1492,7 @@ public class food extends javax.swing.JFrame {
         jTextField3.setText(" ");
         sum=0;
         //Frame1 panel2 textfield and lable
-         jTextField1.setVisible(false);
+        jTextField1.setVisible(false);
         jTextField2.setVisible(false);
         jTextField3.setVisible(false);
         jLabel3.setVisible(false);
@@ -1795,6 +1813,10 @@ public class food extends javax.swing.JFrame {
        JOptionPane.showMessageDialog(null,"Window reset\n Create your custom food ");
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        JOptionPane.showMessageDialog(null,"Your order is arriving in 15 minutes\n Thank You for choosing us");
+    }//GEN-LAST:event_jButton7ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1837,6 +1859,7 @@ public class food extends javax.swing.JFrame {
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox11;

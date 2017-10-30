@@ -595,6 +595,11 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -622,6 +627,8 @@
                           <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextField3" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -704,6 +711,20 @@
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton7">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="ff" red="33" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Eras Demi ITC" size="18" style="0"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Done"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
               </Events>
             </Component>
           </SubComponents>
@@ -1761,7 +1782,7 @@
                           <Component id="jButton2" min="-2" pref="33" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="26" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
